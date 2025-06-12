@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications - Hot Beans Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: peachpuff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            color: palegoldenrod;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .application-list {
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 80%;
+        }
+        .application-list h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .application-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .application-list li {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .application-list li h4 {
+            font-size: 1.3em;
+            color: #333;
+        }
+        .application-form {
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .application-form label {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .application-form input, .application-form textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .application-form button {
+            background-color: #333;
+            color: peachpuff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        .application-form button:hover {
+            background-color: #575757;
+        }
+        footer {
+            background-color: #333;
+            color: gray;
+            text-align: center;
+            padding: 4px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hot Beans Web - Applications</h1><img src="\\wl-file-1.students.ncclondon.ac.uk\Homes$\19172909\Documents\Unit 6\Images\Hot Beans Web logo.jpg.JPG" alt="">
+    <p>Join our team and help us create amazing web experiences. Apply for open positions below!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="web-developers.html">Web Developers</a>
+    <a href="job-requirements.html">Job Requirements</a>
+    <a href="courses.html">Courses</a>
+    <a href="applications.html">Applications</a>
+</nav>
+
+<div class="content">
+    <h2>Open Positions</h2>
+    <p>We're looking for talented individuals to join our team. Below are some of the roles we are currently hiring for:</p>
+
+    <!-- Application List Section -->
+    <div class="application-list">
+        <h3>Available Roles</h3>
+        <ul>
+            <!-- Job 1 -->
+            <li>
+                <h4>Front-End Developer</h4>
+                <p>We are looking for a creative Front-End Developer to help us build modern, responsive, and engaging user interfaces.</p>
+            </li>
+            <!-- Job 2 -->
+            <li>
+                <h4>Back-End Developer</h4>
+                <p>If you have experience with server-side programming and APIs, we want you to help us scale and improve our backend systems.</p>
+            </li>
+            <!-- Job 3 -->
+            <li>
+                <h4>Full-Stack Developer</h4>
+                <p>If you have expertise in both front-end and back-end development, we need you to help us build end-to-end solutions for our clients.</p>
+            </li>
+            <!-- Job 4 -->
+            <li>
+                <h4>UI/UX Designer</h4>
+                <p>We are hiring a talented UI/UX Designer to craft visually appealing and user-friendly designs for our web projects.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Application Form Section -->
+    <div class="application-form">
+        <h3>Apply Now</h3>
+        <form action="#submit" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="position">Position Applying For</label>
+            <select id="position" name="position" required>
+                <option value="front-end">Front-End Developer</option>
+                <option value="back-end">Back-End Developer</option>
+                <option value="full-stack">Full-Stack Developer</option>
+                <option value="ui-ux">UI/UX Designer</option>
+            </select>
+
+            <label for="message">Cover Letter</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Hot Beans Web</p>
+</footer>
+
+</body>
+</html>
